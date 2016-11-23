@@ -9,7 +9,7 @@ TODO: Delete this and the text above, and describe your gem
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'acts_as_enum'
+gem 'acts_as_enum_type'
 ```
 
 And then execute:
@@ -18,11 +18,31 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install acts_as_enum
+    $ gem install acts_as_enum_type
 
 ## Usage
 
-TODO: Write usage instructions here
+````ruby
+acts_as_enum :log_type, %W(init income pay draw operation), %W(初始化钱包 收入 支出 提款 人工操作)
+````
+
+it will generate the following class methods
+
+````ruby
+log_type_collections 
+````
+
+and the following instance methods 
+
+````ruby
+log_type_name
+log_type_values
+is_init?
+is_income?
+is_pay?
+is_draw?
+is_operation
+````
 
 ## Development
 
