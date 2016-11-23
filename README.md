@@ -23,7 +23,7 @@ Or install it yourself as:
 ## Usage
 
 ````ruby
-class wallet_log
+class WalletLog
   include ActsAsEnum
 
   acts_as_enum :log_type, %W(init income pay draw operation), %W(初始化钱包 收入 支出 提款 人工操作)
