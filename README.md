@@ -23,6 +23,7 @@ Or install it yourself as:
 ## Usage
 
 ````ruby
+require 'acts_as_enum'
 class WalletLog
   include ActsAsEnum
 
